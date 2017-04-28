@@ -1,0 +1,22 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "react-sketchapp: Basic Setup",
+      "identifier": "main",
+      "script": "my-command.js"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "main"
+    ]
+  },
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/mdb-konno/sketch-template#readme",
+  "name": "sketch-template",
+  "disableCocoaScriptPreprocessor": true
+}
