@@ -1,15 +1,23 @@
 {
   "name": "sketch-template",
+  "private": true,
   "version": "0.1.0",
   "description": "",
-  "main": "basic-setup.sketchplugin",
+  "main": "template.sketchplugin",
   "manifest": "src/manifest.json",
+  "config": {
+    "filename": "./src/sketch/template.sketch",
+    "dir": "./dist/images/",
+    "format": "png"
+  },
   "scripts": {
     "build": "skpm build",
     "watch": "skpm build --watch",
     "render": "skpm build --watch --run",
     "render:once": "skpm build --run",
-    "link-plugin": "skpm link"
+    "link-plugin": "skpm link",
+    "skt:exp": "sketchtool export artboards $npm_package_config_filename --output=$npm_package_config_dir --format=$npm_package_config_format",
+    "skt:list": "sketchtool list artboards $npm_package_config_filename"
   },
   "repository": {
     "type": "git",
@@ -22,13 +30,14 @@
   },
   "homepage": "https://github.com/mdb-konno/sketch-template#readme",
   "devDependencies": {
-    "skpm": "^0.8.0"
+    "skpm": "^0.9.0"
   },
   "dependencies": {
     "chroma-js": "^1.2.2",
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
     "react-sketchapp": "^0.10.0",
-    "react-test-renderer": "^15.4.2"
+    "react-test-renderer": "^15.4.2",
+    "react-with-styles": "^1.4.0"
   }
 }
