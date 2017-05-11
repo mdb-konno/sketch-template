@@ -1,13 +1,13 @@
 {
-  "compatibleVersion": 3,
   "bundleVersion": 1,
   "commands": [
-  {
-    "name": "react-sketchapp: template",
-    "identifier": "main",
-    "script": "./main.js"
+    {
+      "identifier": "main",
+      "name": "react-sketchapp: template",
+      "script": "./main.js"
     }
   ],
+  "compatibleVersion": 3,
   "menu": {
     "isRoot": true,
     "items": [

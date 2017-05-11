@@ -17,3 +17,6 @@ icon
 - SVGO
 - symbol-organizer
 - Auto Layout
+
+### jq
+`$ brew install jq`

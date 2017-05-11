@@ -1,22 +1,22 @@
 {
-  "compatibleVersion": 3,
   "bundleVersion": 1,
   "commands": [
     {
-      "name": "react-sketchapp: template",
       "identifier": "main",
+      "name": "react-sketchapp: template",
       "script": "main.js"
     }
   ],
+  "compatibleVersion": 3,
+  "description": "",
+  "disableCocoaScriptPreprocessor": true,
+  "homepage": "https://github.com/mdb-konno/sketch-template#readme",
   "menu": {
     "isRoot": true,
     "items": [
       "main"
     ]
   },
-  "version": "0.1.0",
-  "description": "",
-  "homepage": "https://github.com/mdb-konno/sketch-template#readme",
   "name": "sketch-template",
-  "disableCocoaScriptPreprocessor": true
+  "version": "0.1.0"
 }
