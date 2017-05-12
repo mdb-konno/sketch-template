@@ -11,26 +11,11 @@
     "srcPath": "./src/sketch/"
   },
   "scripts": {
-    "build": "skpm build",
-    "json": "bash sketch-to-json.sh $npm_package_config_srcPath$npm_package_config_fileName",
-    "link-plugin": "skpm link",
-    "render": "skpm build --watch --run",
-    "render:once": "skpm build --run",
     "skt:exp": "sketchtool export artboards $npm_package_config_fileName --output=$npm_package_config_distPath --format=$npm_package_config_format",
     "skt:list": "sketchtool list artboards $npm_package_config_fileName",
-    "watch": "skpm build --watch"
   },
-  "dependencies": {
-    "chroma-js": "^1.2.2",
-    "prop-types": "^15.5.8",
-    "react": "^15.4.2",
-    "react-sketchapp": "^0.10.0",
-    "react-test-renderer": "^15.4.2",
-    "react-with-styles": "^1.4.0"
-  },
-  "devDependencies": {
-    "skpm": "^0.9.0"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "author": "@mdb-konno",
   "bugs": {
     "url": "https://github.com/mdb-konno/sketch-template/issues"
