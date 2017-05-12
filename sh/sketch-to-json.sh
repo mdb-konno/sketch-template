@@ -7,10 +7,12 @@ fi
 
 fileName=$1
 fileData="${fileName}.sketch"
+dirPath="./json/"
+dirName="./raw/"
 
 if [ -f ${fileData} ]; then
-  unzip -o ${fileData} -d ./dist/${fileName}
+  unzip -o ${fileData} -d ${dirPath}${dirName}
   find . -name '*.json' -exec sh -c 'cat {} | jq -rS . > {}.1 && mv {}.1 {}' \;
-  rm -rf ./dist/${fileName}/__MACOSX ./dist/${fileName}/.DS_Store
-  echo -e "\n\n output json! \n\n"
+  rm -rf ${dirPath}${dirName}/__MACOSX ${dirPath}${dirName}/.DS_Store
+  echo -e "\n\n 🛠 output json! \n\n"
 fi
