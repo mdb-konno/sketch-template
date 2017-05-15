@@ -6,7 +6,7 @@ if [ $# != 1 ]; then
 fi
 
 fileName=$1
-fileData="${fileName}.sketch"
+fileData="./sketch/${fileName}.sketch"
 dirPath="./json/"
 dirName="./raw/"
 

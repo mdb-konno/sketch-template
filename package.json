@@ -22,13 +22,11 @@
   "scripts": {
     "build": "npm run build:sketchtool & npm run build:json",
     "build:json": "bash ./sh/sketch-to-json.sh template",
-    "build:sketchtool": "sketchtool export artboards $npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json --format=png",
-    "get": "sketchtool list artboards $npm_package_config_fileName.sketch",
-    "msg": "echo 💾 saved. Watching!",
-    "postinstall": "Hellow sketch-template!!",
-    "start": "npm run build && npm run watch",
-    "test": "",
-    "watch": "watch 'npm run msg' ./"
+    "build:sketchtool": "sketchtool export artboards ./sketch/$npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json --format=png",
+    "get": "sketchtool list artboards ./sketch/$npm_package_config_fileName.sketch",
+    "start": "npm run watch",
+    "watch": "watch 'npm run build & npm run watch:msg' ./sketch",
+    "watch:msg": "echo '💾 saved. \n👀 Watching...'"
   },
   "version": "0.1.0"
 }

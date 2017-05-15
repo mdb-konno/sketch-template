@@ -1,15 +1,15 @@
 {
-  "template.sketch" : {
-    "template" : {
-      "iPhone 7" : {
-        "iPhone 7.png" : {
-          "format" : "png",
-          "height" : 667,
-          "x" : 896,
-          "y" : 327,
-          "width" : 375,
-          "name" : "iPhone 7",
-          "scale" : 1
+  "template.sketch": {
+    "template": {
+      "iPhone 7": {
+        "iPhone 7.png": {
+          "format": "png",
+          "height": 667,
+          "name": "iPhone 7",
+          "scale": 1,
+          "width": 375,
+          "x": 896,
+          "y": 327
         }
       }
     }
