@@ -1,7 +1,7 @@
 {
   "app": "com.bohemiancoding.sketch3",
   "appVersion": "43.2",
-  "autosaved": 0,
+  "autosaved": 1,
   "build": 39069,
   "commit": "2ac3f43dc64a2b7982dc85b584be457e7bbba129",
   "created": {
@@ -21,6 +21,14 @@
         }
       },
       "name": "template"
+    },
+    "DF96C842-BF25-4092-94CB-FB4C42448C37": {
+      "artboards": {
+        "C9773603-0D3A-47F6-A6A4-17018A25D0EB": {
+          "name": "btn"
+        }
+      },
+      "name": "Symbols"
     }
   },
   "saveHistory": [

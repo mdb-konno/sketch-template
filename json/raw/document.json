@@ -10,7 +10,7 @@
     },
     "images": []
   },
-  "currentPageIndex": 0,
+  "currentPageIndex": 1,
   "do_objectID": "8B4AEC85-B78E-4212-AAC0-F570C56A9150",
   "enableLayerInteraction": true,
   "enableSliceInteraction": true,
@@ -31,6 +31,11 @@
     {
       "_class": "MSJSONFileReference",
       "_ref": "pages/4B8C4D4B-63DB-4E0A-B233-1EB7E964718B",
+      "_ref_class": "MSImmutablePage"
+    },
+    {
+      "_class": "MSJSONFileReference",
+      "_ref": "pages/DF96C842-BF25-4092-94CB-FB4C42448C37",
       "_ref_class": "MSImmutablePage"
     }
   ]

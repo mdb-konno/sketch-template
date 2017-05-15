@@ -14,5 +14,5 @@ if [ -f ${fileData} ]; then
   unzip -o ${fileData} -d ${dirPath}${dirName}
   find . -name '*.json' -exec sh -c 'cat {} | jq -rS . > {}.1 && mv {}.1 {}' \;
   rm -rf ${dirPath}${dirName}/__MACOSX ${dirPath}${dirName}/.DS_Store
-  echo -e "\n\n 🛠 output json! \n\n"
+  echo -e "\n\n 🛠 Output! \n\n"
 fi
