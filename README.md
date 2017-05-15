@@ -1,8 +1,12 @@
 # sketch-template
 
-## やってくれること
+## 便利にしてくれること
+### ファイル自動生成
 ファイルを監視し、保存タイミングでExport(slice)設定された画像を自動で書き出します。
-また、SketchToolで生成したJSONと、.sketchをJSON化を同時に生成します。これにより、Gitでデザインデータを管理できるようになり、エンジニアとのコミュニケーションが円滑となるはずです。
+svgoで自動的にsvgを圧縮します。
+
+### JSON自動生成
+SketchToolで生成したJSONと、.sketchをJSON化を同時に生成します。これにより、Gitでデザインデータを管理できるようになり、エンジニアとのコミュニケーションが円滑となるはずです。
 
 ## インストール
 ### SketchTool
@@ -31,22 +35,21 @@ $ ./install.sh
 - pakage.json // 設定やscripts変更時編集
 - svgo_config.yaml // svgo設定変更時編集
 
-## Symbols
-icon
-...
-
-
 ## カスタマイズ
 ### `pakage.json`
-以下`fileName`はお好みで
+以下`fileName`はお好みで変更してください。
+ファイル名と同じにしておく必要があります。
 
-```
+```json
   "config": {
     "fileName": "template"
   },
 ```
 
 ### `svgo_config.yaml`
-お好みで設定
+お好みで設定してください。
 
-[svgo](https://github.com/svg/svgo)
+[（公式）svgo](https://github.com/svg/svgo)
+
+## Symbols
+coming soon.
