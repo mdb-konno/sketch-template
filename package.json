@@ -9,6 +9,7 @@
   "dependencies": {},
   "description": "The friendly .sketch for designers and engineers",
   "devDependencies": {
+    "svgo": "^0.7.2",
     "watch": "^1.0.2"
   },
   "homepage": "https://github.com/mdb-konno/sketch-template#readme",
@@ -20,11 +21,13 @@
     "url": "git+https://github.com/mdb-konno/sketch-template.git"
   },
   "scripts": {
-    "build": "npm run build:sketchtool & npm run build:json",
+    "build": "npm run clean & npm run build:sketchtool & npm run build:json & npm run svgo",
     "build:json": "bash ./sh/sketch-to-json.sh template",
-    "build:sketchtool": "sketchtool export artboards ./sketch/$npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json --format=png",
+    "build:sketchtool": "sketchtool export slices ./sketch/$npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json",
+    "clean": "find dist json -type f -exec rm {} +",
     "get": "sketchtool list artboards ./sketch/$npm_package_config_fileName.sketch",
     "start": "npm run watch",
+    "svgo": "svgo --config=svgo_config.yml -f ./dist/images",
     "watch": "watch 'npm run build & npm run watch:msg' ./sketch",
     "watch:msg": "echo '💾 saved. \n👀 Watching...'"
   },
