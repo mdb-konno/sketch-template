@@ -8,6 +8,15 @@
 ### JSON自動生成
 - SketchToolで生成したJSONと、.sketchをJSON化を同時に生成（これにより、Gitでデザインデータを管理できるようになり、エンジニアとのコミュニケーションが円滑となるはずです）
 
+### 色を変更した場合の例
+#### プレビュー画像
+![](doc/images/preview.png)
+
+#### コード
+![](doc/images/code.png)
+
+（色の指定方法はRGBのようだが詳細不明。。。）
+
 ## インストール
 ### SketchTool
 ```
@@ -54,6 +63,3 @@ npm i
 お好みで設定してください。
 
 [（公式）svgo](https://github.com/svg/svgo)
-
-## Symbols
-coming soon.
