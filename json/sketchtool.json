@@ -1,20 +1,18 @@
 {
-  "template.sketch" : {
-    "template" : {
-
-    },
-    "Symbols" : {
-      "btn" : {
-        "btn.svg" : {
-          "format" : "svg",
-          "height" : 46,
-          "x" : 100,
-          "y" : 0,
-          "width" : 46,
-          "name" : "btn",
-          "scale" : 1
+  "template.sketch": {
+    "Symbols": {
+      "btn": {
+        "btn.svg": {
+          "format": "svg",
+          "height": 46,
+          "name": "btn",
+          "scale": 1,
+          "width": 46,
+          "x": 100,
+          "y": 0
         }
       }
-    }
+    },
+    "template": {}
   }
 }

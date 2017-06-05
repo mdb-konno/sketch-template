@@ -10,7 +10,7 @@
     },
     "images": []
   },
-  "currentPageIndex": 1,
+  "currentPageIndex": 0,
   "do_objectID": "8B4AEC85-B78E-4212-AAC0-F570C56A9150",
   "enableLayerInteraction": true,
   "enableSliceInteraction": true,
@@ -38,5 +38,10 @@
       "_ref": "pages/DF96C842-BF25-4092-94CB-FB4C42448C37",
       "_ref_class": "MSImmutablePage"
     }
-  ]
+  ],
+  "userInfo": {
+    "com.invisionlabs.sync": {
+      "metadata": "{\"hasSynced\":0,\"hasProjectIdChanged\":0,\"projectId\":0,\"publicLink\":\"\",\"resolution\":2,\"syncAll\":1}"
+    }
+  }
 }

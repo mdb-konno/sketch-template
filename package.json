@@ -21,14 +21,15 @@
     "url": "git+https://github.com/mdb-konno/sketch-template.git"
   },
   "scripts": {
-    "build": "npm run clean & npm run build:sketchtool & npm run build:json & npm run svgo",
+    "build": "npm run clean && npm run mkdir && npm run build:sketchtool && npm run build:json && npm run svgo",
     "build:json": "bash ./sh/sketch-to-json.sh template",
     "build:sketchtool": "sketchtool export slices ./sketch/$npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json",
-    "clean": "find dist json -type f -exec rm {} +",
+    "clean": "rm -rf dist json",
     "get": "sketchtool list artboards ./sketch/$npm_package_config_fileName.sketch",
+    "mkdir": "mkdir -p dist json",
     "start": "npm run watch",
     "svgo": "svgo --config=svgo_config.yml -f ./dist/images",
-    "watch": "watch 'npm run build & npm run watch:msg' ./sketch",
+    "watch": "watch 'npm run build && npm run watch:msg' ./sketch",
     "watch:msg": "echo '💾 saved. \n👀 Watching...'"
   },
   "version": "0.1.0"
