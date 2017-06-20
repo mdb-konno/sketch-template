@@ -12,7 +12,9 @@
     "variant": "NONAPPSTORE",
     "version": 91
   },
-  "fonts": [],
+  "fonts": [
+    "HiraginoUDSansStd-W3"
+  ],
   "pagesAndArtboards": {
     "4B8C4D4B-63DB-4E0A-B233-1EB7E964718B": {
       "artboards": {

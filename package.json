@@ -4,7 +4,8 @@
     "url": "https://github.com/mdb-konno/sketch-template/issues"
   },
   "config": {
-    "fileName": "template"
+    "fileName": "template",
+    "path_dist": "dist"
   },
   "dependencies": {},
   "description": "The friendly .sketch for designers and engineers",
@@ -21,15 +22,16 @@
     "url": "git+https://github.com/mdb-konno/sketch-template.git"
   },
   "scripts": {
-    "build": "npm run clean && npm run mkdir && npm run build:sketchtool && npm run build:json && npm run svgo",
-    "build:json": "bash ./sh/sketch-to-json.sh template",
-    "build:sketchtool": "sketchtool export slices ./sketch/$npm_package_config_fileName.sketch --output=./dist/images --outputJSON=./json/sketchtool.json",
-    "clean": "rm -rf dist json",
-    "get": "sketchtool list artboards ./sketch/$npm_package_config_fileName.sketch",
-    "mkdir": "mkdir -p dist json",
+    "build": "npm run clean && npm run mkdir && npm run build:sketchtool && npm run build:json && npm run svgo && npm run build:msg",
+    "build:json": "bash ./sh/sketch-to-json.sh $npm_package_config_fileName $npm_package_config_path_dist/json/raw/",
+    "build:msg": "echo '\n\n 🗳 Done build! \n\n'",
+    "build:sketchtool": "sketchtool export slices ./Source\\ Files/$npm_package_config_fileName.sketch --output=$npm_package_config_path_dist/images --outputJSON=$npm_package_config_path_dist/json/export.json",
+    "clean": "rm -rf $npm_package_config_path_dist",
+    "get": "sketchtool list slices ./Source\\ Files/$npm_package_config_fileName.sketch",
+    "mkdir": "mkdir -p $npm_package_config_path_dist/json",
     "start": "npm run watch",
-    "svgo": "svgo --config=svgo_config.yml -f ./dist/images",
-    "watch": "watch 'npm run build && npm run watch:msg' ./sketch",
+    "svgo": "svgo --config=svgo_config.yml -f $npm_package_config_path_dist/images",
+    "watch": "watch 'npm run build && npm run watch:msg' ./Source\\ Files/",
     "watch:msg": "echo '💾 saved. \n👀 Watching...'"
   },
   "version": "0.1.0"
