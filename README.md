@@ -2,7 +2,7 @@
 
 ## 便利にしてくれること
 ### 1. 画像ファイル自動生成
-- .sketchファイルを監視し、保存タイミングでExport(slice)設定された画像を自動で書き出します
+- `.sketch`ファイルを監視し、保存タイミングでExport(slice)設定された画像を自動で書き出します
 - svgoで自動的にsvgを圧縮します
 
 ### 2. JSON自動生成
@@ -47,17 +47,17 @@ npm i
 
 ## 使い方
 - クローンしたフォルダ内で`npm start`
-- その後、`template..sketch`ファイルで編集するだけ
-- 作業フォルダに適宜コピーしてご使用ください
+- その後、`template.sketch`ファイルで編集するだけ
+- Watchingを止めたい時は、`⌃ + c`
+- 画像書き出しだけ行いたい時は、`npm run build`
 
 ## フォルダ構成
 
 | フォルダ名 | 説明 |
 | ------------- | ------------- |
-| dist | 書き出されたファイル |
-| json | 生成されるjsonファイル格納場所 |
+| dist | 書き出されたファイル（画像、json） |
 | sh | シェルスクリプト格納場所 |
-| sketch | .sketchファイル |
+| Source Files | `.sketch`ファイル格納場所 |
 | pakage.json | 設定やscripts変更時編集 |
 | svgo_config.yaml  | svgo設定変更時編集 |
 
@@ -65,15 +65,17 @@ npm i
 ## カスタマイズ
 ### pakage.json
 以下`fileName`はお好みで変更してください。
-.sketchファイル名と同じにしておく必要があります。
+`.sketch`ファイル名と同じにしておく必要があります。
+また、`path_dist`をGitフォルダに指定すると管理が楽になると思います。
 
 ```json
   "config": {
-    "fileName": "template"
+    "fileName": "template",
+    "path_dist": "dist"
   },
 ```
 
 ### svgo_config.yaml
-お好みで設定してください。
+お好みで圧縮設定してください。
 
 [svgo(公式)](https://github.com/svg/svgo)
