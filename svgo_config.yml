@@ -1,5 +1,5 @@
 plugins:
-  - cleanupIDs: false
+  - cleanupIDs: true
   - removeUnknownsAndDefaults:
-      unknownAttrs: false
-  - removeXMLNS: true
+      unknownAttrs: true
+  - removeXMLNS: false
