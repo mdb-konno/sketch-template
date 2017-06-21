@@ -25,6 +25,9 @@
 git clone git@github.com:mdb-konno/sketch-template.git
 ```
 
+格納場所は、InVisinフォルダで一元管理するために、`/Users/自分/InVision/自分@mediba.jp/プロジェクト名/Assets`がおすすめ。
+
+
 ### SketchTool
 ```
 $ sudo /Applications/Sketch.app/Contents/Resources/sketchtool/install.sh
