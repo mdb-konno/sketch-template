@@ -3,10 +3,10 @@
 ## 便利にしてくれること
 ### 1. 画像ファイル自動生成
 - `.sketch`ファイルを監視し、保存タイミングでExport(slice)設定された画像を自動で書き出します
-- svgoで自動的にsvgを圧縮します
+- [svgo](https://github.com/svg/svgo)で自動的にsvgを圧縮します
 
 ### 2. JSON自動生成
-[SketchTool](https://www.sketchapp.com/tool/)で生成したJSONと、.sketchをJSON化を同時に生成をします。
+[SketchTool](https://www.sketchapp.com/tool/)で生成したJSONと、`.sketch`をJSON化を同時に生成をします。
 
 これにより、バイナリデータからテキストデータとなるため、Gitでデザインデータを視覚的に管理できるようになり、エンジニアとのコミュニケーションが円滑となるはずです。
 
@@ -67,9 +67,8 @@ npm i
 
 ## カスタマイズ
 ### pakage.json
-以下`fileName`はお好みで変更してください。
-`.sketch`ファイル名と同じにしておく必要があります。
-また、`path_dist`をGitフォルダに指定すると管理が楽になると思います。
+- `fileName` : `.sketch`ファイル名と同じにしておく必要があります
+- `path_dist` : Gitフォルダに指定すると管理が楽になると思います
 
 ```json
   "config": {
